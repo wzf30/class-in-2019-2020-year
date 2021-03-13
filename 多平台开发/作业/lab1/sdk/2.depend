@@ -1,0 +1,15 @@
+# depslib dependency file v1.0
+1585470382 source:g:\课件\多平台开发\作业\lab1\2\main.cpp
+	<windows.h>
+	<stdlib.h>
+	<cstdlib>
+	<stdio.h>
+	<tlhelp32.h>
+
+1585470682 source:g:\课件\多平台开发\作业\lab1\sdk\main.cpp
+	<windows.h>
+	<stdlib.h>
+	<cstdlib>
+	<stdio.h>
+	<tlhelp32.h>
+

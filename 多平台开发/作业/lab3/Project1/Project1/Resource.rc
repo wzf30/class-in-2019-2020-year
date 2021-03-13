@@ -1,0 +1,120 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "winresrc.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(简体，中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""winresrc.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICON1               ICON                    "icon1.ico"
+
+IDI_ICON2               ICON                    "icon2.ico"
+
+IDI_ICON3               ICON                    "icon3.ico"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU1 MENU
+BEGIN
+    POPUP "图标(&I)"
+    BEGIN
+        MENUITEM "图标(&X)\tCtrl+X",              ID_40002
+        MENUITEM "图标(&Y)\tCtrl+Y",              ID_40003
+        MENUITEM "图标(&Z)\tCtrl+Z",              ID_40004
+    END
+    POPUP "显示(&D)"
+    BEGIN
+        MENUITEM "显示(&1)\tCtrl+1",              ID_40005
+        MENUITEM "显示(2)\tCtrl+2",               ID_40006
+        MENUITEM "显示(3)\tCtrl+3",               ID_40007
+        MENUITEM "显示(4)\tCtrl+4",               ID_40008
+    END
+    POPUP "关于(&A)"
+    BEGIN
+        MENUITEM "程序信息(&I)\tF1",                ID_40009
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_ACCELERATOR1 ACCELERATORS
+BEGIN
+    "^X",           ID_40002,               ASCII,  NOINVERT
+    "^Y",           ID_40003,               ASCII,  NOINVERT
+    "^Z",           ID_40004,               ASCII,  NOINVERT
+    "1",            ID_40005,               ASCII,  NOINVERT
+    "2",            ID_40006,               ASCII,  NOINVERT
+    "3",            ID_40007,               ASCII,  NOINVERT
+    "4",            ID_40008,               ASCII,  NOINVERT
+    VK_F1,          ID_40009,               VIRTKEY, NOINVERT
+END
+
+#endif    // 中文(简体，中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

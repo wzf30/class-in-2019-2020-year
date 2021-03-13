@@ -1,0 +1,23 @@
+# depslib dependency file v1.0
+1586684738 source:g:\课件\多平台开发\作业\lab3\0412\resource.rc
+	"resource.h"
+	"winresrc.h"
+
+1586683339 g:\课件\多平台开发\作业\lab3\0412\resource.h
+
+1586688660 source:g:\课件\多平台开发\作业\lab3\0412\main.cpp
+	<windows.h>
+	<stdio.h>
+	"resource.h"
+
+1586688851 source:g:\课件\多平台开发\作业\lab3\lab3_汪子凡\main.cpp
+	<windows.h>
+	<stdio.h>
+	"resource.h"
+
+1586683339 g:\课件\多平台开发\作业\lab3\lab3_汪子凡\resource.h
+
+1586684738 source:g:\课件\多平台开发\作业\lab3\lab3_汪子凡\resource.rc
+	"resource.h"
+	"winresrc.h"
+

@@ -1,0 +1,263 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "winresrc.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(简体，中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""winres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICON1               ICON                    "icon1.ico"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP1             BITMAP                  "bitmap1.bmp"
+
+IDB_BITMAP2             BITMAP                  "bitmap2.bmp"
+
+IDB_BITMAP3             BITMAP                  "bitmap3.bmp"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DIALOG1 DIALOGEX 0, 0, 270, 150
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "复选显示位图选择对话框"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK1,134,33,50,14
+    PUSHBUTTON      "取消",IDCANCEL1,134,85,50,14
+    CONTROL         "复选位图2",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,54,36,55,14
+    CONTROL         "复选位图2",IDC_CHECK2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,55,61,56,13
+    CONTROL         "复选位图3",IDC_CHECK3,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,56,89,63,16
+END
+
+IDD_DIALOG2 DIALOGEX 0, 0, 256, 125
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "单选显示位图选择对话框"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK2,133,30,50,14
+    PUSHBUTTON      "取消",IDCANCEL2,137,72,50,14
+    CONTROL         "单选位图1",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON,54,27,54,10
+    CONTROL         "单选位图2",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON,55,52,54,10
+    CONTROL         "单选位图3",IDC_RADIO3,"Button",BS_AUTORADIOBUTTON,55,80,54,10
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_CURSOR1             CURSOR                  "cursor1.cur"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_DIALOG1, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 264
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 143
+    END
+
+    IDD_DIALOG2, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 249
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 118
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_DIALOG1 AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_DIALOG2 AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU_CH MENU
+BEGIN
+    POPUP "文件(&F)"
+    BEGIN
+        MENUITEM "退出(&X)",                      ID_FILE_EXIT
+    END
+    POPUP "对话框(&O)"
+    BEGIN
+        MENUITEM "模式对话框(&M)...\tCtrl+A",        ID_DIALOG_A
+        MENUITEM "无模式对话框(&L)...\tCtrl+B",       ID_DIALOG_B
+        MENUITEM "文件对话框(&F)...\tCtrl+C",        ID_DIALOG_C
+    END
+    POPUP "光标类型(&C)"
+    BEGIN
+        MENUITEM "光标1(箭头)\\tCtrl+1",            ID_CUSSOR1
+        MENUITEM "光标2(十字)\\tCtrl+2",            ID_CUSSOR2
+        MENUITEM "光标(自定义)\\tCtrl+3",            ID_CUSSOR3
+    END
+    POPUP "语言(&L)"
+    BEGIN
+        MENUITEM "中(Chinese)\\tCtrl+Shift+C",   ID_LANGUAGE_CH
+        MENUITEM "英(English)\\tCtrl+Shift+D",   ID_LANGUAGE_EG
+    END
+    POPUP "关于(&A)"
+    BEGIN
+        MENUITEM "程序信息(&I)\tF1",                ID_MESSAGESHOW
+    END
+END
+
+IDR_MENU_EG MENU
+BEGIN
+    POPUP "File"
+    BEGIN
+        MENUITEM "Exit",                        ID_FILE_EXIT
+    END
+    POPUP "Dialog"
+    BEGIN
+        MENUITEM "Modal Dialog...\tCtrl+A",     ID_DIALOG_A
+        MENUITEM "Modaless Dialog...\tCtrl+B",  ID_DIALOG_B
+        MENUITEM "File Dialog...\\tCtrl+C",     ID_DIALOG_C
+    END
+    POPUP "Cursor"
+    BEGIN
+        MENUITEM "Cursor1(ARROW)\\tCtrl+1",     ID_CUSSOR1
+        MENUITEM "Cursor2(CROSS)\\tCtrl+2",     ID_CUSSOR2
+        MENUITEM "Cursor3(UserDefined)\\tCtrl+3", ID_CUSSOR3
+    END
+    POPUP "Language"
+    BEGIN
+        MENUITEM "Chinese(中)\\tCtrl+Shift+C",   ID_LANGUAGE_CH
+        MENUITEM "English(英)\tCtrl+Shift+D",    ID_LANGUAGE_EG
+    END
+    POPUP "About"
+    BEGIN
+        MENUITEM "Program Information\\tF1",    ID_MESSAGESHOW
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_ACCELERATOR1 ACCELERATORS
+BEGIN
+    "^A",           ID_DIALOG_A,            ASCII,  NOINVERT
+    "^B",           ID_DIALOG_B,            ASCII,  NOINVERT
+    "^C",           ID_DIALOG_C,            ASCII,  NOINVERT
+    "1",            ID_CUSSOR1,             VIRTKEY, CONTROL, NOINVERT
+    "2",            ID_CUSSOR2,             VIRTKEY, CONTROL, NOINVERT
+    "3",            ID_CUSSOR3,             VIRTKEY, CONTROL, NOINVERT
+    "C",            ID_LANGUAGE_CH,         VIRTKEY, SHIFT, CONTROL, NOINVERT
+    "D",            ID_LANGUAGE_EG,         VIRTKEY, SHIFT, CONTROL, NOINVERT
+    VK_F1,          ID_MESSAGESHOW,         VIRTKEY, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_CHINESE1            "当前光标是:IDC_ARROW"
+    IDS_CHINESE2            "当前光标是:IDC_CROSS"
+    IDS_CHINESE3            "当前光标是:我的光标"
+    IDS_ENGLISH1            "The current cursor is:IDC_ARROW"
+    IDS_ENGLISH2            "The current cursor is:IDC_CROSS"
+    IDS_ENGLISH3            "The current cursor is:My Cursor"
+END
+
+#endif    // 中文(简体，中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

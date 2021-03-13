@@ -1,0 +1,3 @@
+G:\课件\多平台开发\作业\lab7\lab5_汪子凡\bin\Debug\lala.txt
+G:\课件\多平台开发\作业\lab7\lab5_汪子凡\bin\Debug\mytry3.txt
+mytry.txt

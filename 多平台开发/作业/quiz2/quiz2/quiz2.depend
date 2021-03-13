@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1591327705 source:g:\课件\多平台开发\作业\quiz2\quiz2\main.cpp
+	<windows.h>
+	<stdio.h>
+

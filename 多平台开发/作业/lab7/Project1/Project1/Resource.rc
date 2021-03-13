@@ -1,0 +1,217 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "winresrc.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(简体，中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""winresrc.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICON1               ICON                    "icon1.ico"
+
+IDI_ICON2               ICON                    "icon2.ico"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU1 MENU
+BEGIN
+    POPUP "File"
+    BEGIN
+        MENUITEM "New\tCtrl+N",                 ID_FILE_NEW
+        MENUITEM "Open...\tCtrl+O",             ID_FILE_OPEN
+        MENUITEM "Save\tCtrl+S",                ID_FILE_SAVE
+        MENUITEM "Save as...\tCtrl+Shift+S",    ID_FILE_SAVEAS
+        POPUP "Recent Files"
+        BEGIN
+            MENUITEM "1.",                          ID_RECENTFILES_1
+            MENUITEM "2.",                          ID_RECENTFILES_2
+            MENUITEM "3.",                          ID_RECENTFILES_3
+        END
+    END
+    POPUP "Settings"
+    BEGIN
+        POPUP "Change"
+        BEGIN
+            MENUITEM "Beizer",                      ID_CHANGE_BEIZER
+            MENUITEM "Triangle",                    ID_CHANGE_TRIANGLE
+        END
+        MENUITEM "Repaint",                     ID_SETTINGS_REPAINT
+        MENUITEM "Modify",                      ID_SETTINGS_MODIFY
+    END
+    POPUP "Help"
+    BEGIN
+        MENUITEM "Lab7 help",                   ID_HELP_LAB7HELP
+        MENUITEM "About",                       ID_HELP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DIALOG1 DIALOGEX 0, 0, 310, 177
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Bezier点坐标设置"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",OK_B,199,156,50,14
+    PUSHBUTTON      "取消",CANCEL_B,253,156,50,14
+    LTEXT           "修改Bezier的四个点坐标，请输入整数",ID_SETTINGS_MODIFY,21,22,190,22
+    EDITTEXT        IDC_EDIT1,70,81,33,15,ES_AUTOHSCROLL
+    LTEXT           "以右上方为原点，竖直方向最大为， 水平方向最大为 ",IDC_STATIC,22,50,203,8
+    LTEXT           "端点P0:",IDC_STATIC,27,83,37,12
+    LTEXT           "端点P3:",IDC_STATIC,155,83,41,12
+    EDITTEXT        IDC_EDIT2,198,81,33,15,ES_AUTOHSCROLL
+    LTEXT           "控制点P1:",IDC_STATIC,25,112,37,12
+    LTEXT           "控制点P2:",IDC_STATIC,155,112,37,12
+    EDITTEXT        IDC_EDIT3,69,108,34,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT4,198,108,33,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT5,110,81,33,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT6,238,81,34,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT7,111,109,34,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT8,238,108,33,15,ES_AUTOHSCROLL
+END
+
+IDD_DIALOG2 DIALOGEX 0, 0, 310, 177
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "三角形点坐标设置"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,199,156,50,14
+    PUSHBUTTON      "取消",IDCANCEL,253,156,50,14
+    LTEXT           "修改三角形三个点坐标，请输入整数",IDC_STATIC,26,23,155,15
+    LTEXT           "以右上方为原点，竖直方向最大为， 水平方向最大为 ",IDC_STATIC,25,52,233,16
+    LTEXT           "顶点P0：",IDC_STATIC,26,84,43,11
+    EDITTEXT        IDC_T_EDIT1,79,82,71,14,ES_AUTOHSCROLL
+    LTEXT           "顶点P1：",IDC_STATIC,26,108,43,11
+    EDITTEXT        IDC_T_EDIT2,78,107,71,14,ES_AUTOHSCROLL
+    LTEXT           "顶点P3：",IDC_STATIC,27,134,43,11
+    EDITTEXT        IDC_T_EDIT3,77,132,71,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_T_EDIT4,162,82,71,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_T_EDIT5,161,107,71,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_T_EDIT6,161,133,71,14,ES_AUTOHSCROLL
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_ACCELERATOR1 ACCELERATORS
+BEGIN
+    "^N",           ID_FILE_NEW,            ASCII,  NOINVERT
+    "^O",           ID_FILE_OPEN,           ASCII,  NOINVERT
+    "^S",           ID_FILE_SAVE,           ASCII,  NOINVERT
+    "S",            ID_FILE_SAVEAS,         VIRTKEY, SHIFT, CONTROL, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_DIALOG1, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 303
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 170
+    END
+
+    IDD_DIALOG2, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 303
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 170
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_DIALOG1 AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_DIALOG2 AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+#endif    // 中文(简体，中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

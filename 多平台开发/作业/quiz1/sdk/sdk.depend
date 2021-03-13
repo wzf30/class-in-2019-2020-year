@@ -1,0 +1,22 @@
+# depslib dependency file v1.0
+1588404669 source:g:\课件\多平台开发\作业\新建文件夹\sdk\popmenu.rc
+	"resource.h"
+	"afxres.h"
+
+1585491243 g:\课件\多平台开发\作业\新建文件夹\sdk\resource.h
+
+1588898503 source:g:\课件\多平台开发\作业\新建文件夹\sdk\main.cpp
+	<windows.h>
+	"resource.h"
+
+1588404669 source:g:\课件\多平台开发\作业\quiz1\sdk\popmenu.rc
+	"resource.h"
+	"afxres.h"
+
+1585491243 g:\课件\多平台开发\作业\quiz1\sdk\resource.h
+
+1588909536 source:g:\课件\多平台开发\作业\quiz1\sdk\main.cpp
+	<windows.h>
+	"resource.h"
+	<stdio.h>
+
