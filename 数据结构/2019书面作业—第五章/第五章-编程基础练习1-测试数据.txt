@@ -1,0 +1,50 @@
+测试数据1#:
+括号表示法： A(B(E,F,G),C,D(H,I(J)))
+
+双亲表示法
+10
+-1 A 0 B 0 C 0 D 1 E 1 F 1 G 3 H 3 I 8 J
+
+层号表示法：
+10
+0 A 1 B 2 E 2 F 2 G 1 C 1 D 2 H 2 I 3 J
+
+
+测试数据1#
+A(B(D,E(H,I),F(J)),C(G(K,L)))
+
+12
+-1 A 0 B 0 C 1 D 1 E 1 F 2 G 4 H 4 I 5 J 6 K 6 L
+
+12
+0 A 1 B 2 D 2 E 3 H 3 I 2 F 3 J 1 C 2 G 3 K 3 L
+
+测试数据3#：
+
+A(B(C(D(E(F(G(H(I(J)))))))))		
+
+10
+-1 A 0 B 1 C 2 D 3 E 4 F 5 G 6 H 7 I 8 J
+
+10
+0 A 1 B 2 C 3 D 4 E 5 F 6 G 7 H 8 I 9 J
+
+
+测试数据4#：
+A					
+
+1
+-1 A
+
+1
+0 A
+
+测试数据5#：
+
+A(B(D(H,I),E(J,K)),C(F(L,M),G(N,O)))
+
+15
+-1 A 0 B 0 C 1 D 1 E 2 F 2 G 3 H 3 I 4 J 4 K 5 L 5 M 6 N 6 O
+
+15
+0 A 1 B 2 D 3 H 3 I 2 E 3 J 3 K 1 C 2 F 3 L 3 M 2 G 3 N 3 O
